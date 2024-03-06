@@ -7,7 +7,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and extract the web content
-RUN cp /mnt/project/website/web.html /var/www/html/ 
+COPY web.html /var/www/html/ 
 RUN unzip /var/www/html/web.html -d /var/www/html/ && \
     #rm /var/www/html/oxer.zip
 
