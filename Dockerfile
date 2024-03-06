@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 # Download and extract the web content
 COPY web.html /var/www/html/ 
-RUN unzip /var/www/html/web.html -d /var/www/html/ && \
+#RUN unzip /var/www/html/web.html -d /var/www/html/ && \
     #rm /var/www/html/oxer.zip
 
 
